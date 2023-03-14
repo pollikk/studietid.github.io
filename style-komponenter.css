@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0 15px 0 15px;
+    background-color: lightgray;
+}
+a {
+    color: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    text-decoration: none;
+}
+.button1 {
+    margin: 5px 0px 0px 0px;
+    transform: translate(1720px,-70px);
+    background-color: white;
+    border: solid 2px black;
+    border-radius: 9px;
+    height: 25px;
+    width: 100px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button1:hover {
+    background-color: green;
+}
+#overskrift{
+    text-align: center;
+    font-weight: 700;
+    font-size: 65px;
+}
+.container{
+    margin: 300px 150px 0 150px;
+    padding: 50px;
+    display: grid;
+    border: solid 2px black;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.7);
+    background-color: white;
+    grid-template-areas:
+    "area1 area1 area1 area1"
+    "heading1 heading1 heading1 heading1"
+    "area2 area2 area2 area3"
+    "area4 area5 area5 area5"
+    "area6 area6 area6 area7"
+    "area8 area9 area9 area9"
+    "area10 area10 area10 area11"
+    "area12 area13 area13 area13"
+    "area14 area14 area14 area15"
+    "area16 area16 area16 area17"
+        "area18 area18 area18 area19"
+        "area20 area21 area21 area21"
+    ;
+}
+.heading1{
+    display: flex;
+    margin: -150px 0 0 0;
+    font-size: 25px;
+    grid-area: heading1;
+    align-items: center;
+    justify-content: center;
+}
+.area1{
+    margin: -300px -100px 50px -100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    background-color: white;
+    border: solid 2px transparent;
+    border-radius: 20px;
+    grid-area: area1;
+    height: 200px;
+}
+.area2 {
+    margin: 0 0 25px 0;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    grid-area: area2;
+    height: 200px;
+}
+.area3 {
+    margin: 0 0 25px 0;
+    width: 450px;
+    grid-area: area3;
+    background-image: url(images/resistor-komponent.PNG);
+  background-repeat: no-repeat;
+  background-size: 500px;
+background-position: 0px -75px;
+}
+.area4 {
+    grid-area: area4;
+    height: 200px;
+    width: 450px;
+    background-image: url(images/resistor-komponent.PNG);
+    background-repeat: no-repeat;
+        background-size: 500px;
+        background-position: 0px -75px;
+}
+.area5 {
+    margin: 0 0 25px 0;
+        display: flex;
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+        grid-area: area5;
+}
+.area6 {
+    margin: 0 0 25px 0;
+        display: flex;
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+    grid-area: area6;
+}
+.area7 {
+    grid-area: area7;
+        background-image: url(images/resistor-komponent.PNG);
+            background-repeat: no-repeat;
+            background-size: 500px;
+            background-position: 0px -75px;
+}
+.area8 {
+    grid-area: area8;
+    height: 200px;
+        background-image: url(images/resistor-komponent.PNG);
+            background-repeat: no-repeat;
+            background-size: 500px;
+            background-position: 0px -75px;
+}
+.area9 {
+        margin: 0 0 25px 0;
+            display: flex;
+            font-size: 20px;
+            align-items: center;
+            justify-content: center;
+            height: 200px;
+    grid-area: area9;
+}
+.area10 {
+    background-color: burlywood;
+    grid-area: area10;
+}
+.area11 {
+    background-color: wheat;
+    grid-area: area11;
+}
+.area12 {
+    background-color: darkcyan;
+    grid-area: area12;
+}
+.area13 {
+    background-color: darkkhaki;
+    grid-area: area13;
+}
+.area14 {
+    background-color: darkred;
+    grid-area: area14;
+}
+.area15 {
+    background-color: darkorchid;
+    grid-area: area15;
+}
+.area16 {
+    background-color: darkgoldenrod;
+    grid-area: area16;
+}
+.area17 {
+    background-color: yellow;
+    grid-area: area17;
+}
+.area18 {
+    background-color: red;
+    grid-area: area18;
+}
+.area19 {
+    background-color: rebeccapurple;
+    grid-area: area19;
+}
+.area20 {
+    background-color: lightcoral;
+    grid-area: area20;
+}
+.area21 {
+    background-color: lightslategray;
+    grid-area: area21;
+}

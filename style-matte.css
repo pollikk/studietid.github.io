@@ -1,0 +1,259 @@
+*{
+    margin: 5px;
+    padding: 0;
+}
+body{
+    background-color: lightgrey;
+}
+a {
+    color: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    text-decoration: none;
+}
+#dc-spenning-koblet{
+            position: absolute;
+                border: 2px solid black;
+                border-radius: 150px;
+                height: 200px;
+                top: 1450px;
+                left: 1500px;
+                cursor: pointer;
+                transition: 1s;
+}
+#dc-spenning-koblet:hover{
+    transform: scale(3) translate(-90px, 0px);
+}
+#resistans-koblet{
+    position: absolute;
+        border: 2px solid black;
+        border-radius: 150px;
+        height: 200px;
+        top: 950px;
+        left: 50px;
+        cursor: pointer;
+        transition: 1s;
+}
+#resistans-koblet:hover{
+    transform: scale(3) translate(90px, 0px);
+}
+#resistans-bilde-overskrift{
+    font-size: 25px;
+    position: absolute;
+    top: 900px;
+    left: 100px;
+}
+
+.button1{
+position: absolute;
+transform: translate(1720px,-150px);
+background-color: white;
+border: solid 2px black;
+border-radius: 9px;
+height: 25px;
+width: 100px;
+font-size: 20px;
+cursor: pointer;
+transition: 0.3s;
+}
+.button1:hover{
+background-color: green;
+}
+.overskrift{
+    margin-top: -95px;
+    grid-area: overskrift;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container{
+    display: grid;
+    margin: 150px 50px 50px 50px;
+    grid-template-areas: 
+    "overskrift overskrift overskrift overskrift"
+    "area1 area1 area2 area2"
+    "area1 area1 area2 area2"
+    "area3 area3 area3 area3"
+    "area4 area4 area4 area4"
+    ;
+}
+
+.area1{
+    margin: 10px 0px 10px 5px;
+    padding: 75px;
+    border: solid 1px black;
+    background-repeat: no-repeat;
+    height: 450px;
+    background-size: cover;
+    grid-area: area1;
+    background-image: url(images/resistans-skjema.PNG);
+    font-size: small;
+    cursor: pointer;
+    transition: 1s;
+}
+#area1-id{
+    margin: -35px 0px 0px 0px;
+    text-align: end;
+    justify-content: start;
+    font-size: 40px;
+}
+#area2-id{
+    margin: -35px 0px 0px 0px;
+    text-align: end;
+    justify-content: start;
+    font-size: 40px;
+}
+.area1:active{
+    background-image: url(images/bilde5.jpg);
+    transform: translate(500px) scale(1.5);
+}
+
+.area2 {
+    margin: 10px 0px 10px 5px;
+    padding: 85px;
+    border: solid 1px black;
+    grid-area: area2;
+    background-image: url(images/dc-spenning.PNG) ;
+    background-repeat:no-repeat ;
+    background-size: cover;
+    cursor: pointer;
+    transition: 1s;
+}
+.area2:active {
+    background-image: url(images/bilde5.jpg);
+    transform: translate(-500px) scale(1.5);;
+}
+.area3 {
+    display: grid;
+    margin: 10px 355px 10px 355px;
+    height: 1000px;
+    grid-area: area3;
+    border: solid 2px black;
+    background-color: white;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 7px;
+    grid-template-areas:
+     "area3-heading area3-heading area3-heading"
+    "area3-resistans area3-resistans area3-resistans"
+    "area3-dc-spenning-heading area3-dc-spenning-heading area3-dc-spenning-heading"
+    "area3-dc-spenning area3-dc-spenning area3-dc-spenning"
+    ;
+}
+.area3-heading{
+    display: flex;
+    height: 25px;
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+    grid-area:area3-heading;
+}
+.area3-resistans{
+    margin-top: -130px;
+    display: flex;
+    font-weight: 500;
+    font-size: 20px;
+    grid-area: area3-resistans;
+
+}
+.area3-dc-spenning-heading{
+    display: flex;
+    font-size: 25px;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+    grid-area:area3-dc-spenning-heading;
+}
+.area3-dc-spenning{
+    margin-top: -130px;
+        display: flex;
+        font-weight: 500;
+        font-size: 20px;
+}
+
+.area4 { 
+    margin: 10px 0px 10px 5px;
+     background-color: seagreen;
+    grid-area: area4;
+    border: solid 2px black;
+    border-radius: 7px;
+}
+.container2 {
+    display: grid;
+    margin: 150px 50px 50px 50px;
+    grid-template-areas:
+        "overskrift overskrift overskrift overskrift"
+        "area5 area5 area6 area6"
+        "area5 area5 area6 area6"
+        "area7 area7 area8 area8"
+    ;
+}
+
+.area5 {
+    margin: 10px 0px 10px 5px;
+    padding: 75px;
+    border: solid 1px black;
+    box-shadow: 25px 25px 25px 15px rgba(0, 0, 0, 1);
+    background-repeat: no-repeat;
+    height: 450px;
+    background-size: cover;
+    grid-area: area5;
+    background-image: url(images/resistans-skjema.PNG);
+    font-size: small;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#area5-id {
+    margin: -35px 0px 0px 0px;
+    text-align: end;
+    justify-content: start;
+    font-size: 40px;
+}
+
+#area6-id {
+    margin: -35px 0px 0px 0px;
+    text-align: end;
+    justify-content: start;
+    font-size: 40px;
+}
+
+.area5:active {
+    background-image: url(images/bilde5.jpg);
+    transform: translate(500px) scale(1.5);
+}
+
+.area6 {
+    margin: 10px 0px 10px 5px;
+    padding: 85px;
+    border: solid 1px black;
+    box-shadow: 25px 25px 25px 15px rgba(0, 0, 0, 1);
+    grid-area: area6;
+    background-image: url(images/dc-spenning.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.area6:active {
+    background-image: url(images/bilde5.jpg);
+    transform: translate(-500px) scale(1.5);
+    ;
+}
+
+.area7 {
+    margin: 10px 0px 10px 5px;
+    height: 100px;
+    background-color: sandybrown;
+    grid-area: area7;
+    border: solid 2px black;
+    border-radius: 7px;
+}
+
+.area8 {
+    margin: 10px 0px 10px 5px;
+    background-color: seagreen;
+    grid-area: area8;
+    border: solid 2px black;
+    border-radius: 7px;
+}
